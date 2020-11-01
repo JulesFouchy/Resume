@@ -20,30 +20,49 @@ return h(
                 FR: 'Ingénieur Logiciel étudiant',
             }[l])),
         ]),
-        Section({
-            EN: 'Overview',
-            FR: 'En bref',
-        }[l],
-            text({
-                EN: 'Software Engineering student',
-                FR: 'Ingénieur Logiciel étudiant',
-            }[l])
-        ),
-        Section({
-            EN: 'Skills',
-            FR: 'Compétences',
-        }[l],
-        h('span', {id: 'skills'}, [
-            Skill('C++', 4),
-            Skill('Maths', 4),
-            Skill('OpenGL', 4),
-            Skill('Processing / p5.js', 5),
-            Skill('glsl', 4),
-            Skill('Unity', 3),
-            Skill('Typescript', 4),
-            Skill('Hyperapp (JS framework)', 4),
+        h('div',
+        {
+            id: 'columns-wrapper'
+        },
+        [
+            h('div',
+            {
+                id: 'column1',
+            },
+            [
+                Section({
+                    EN: 'Overview',
+                    FR: 'En bref',
+                }[l],
+                    text({
+                        EN: 'Software Engineering student',
+                        FR: 'Ingénieur Logiciel étudiant',
+                    }[l])
+                ),
+                Section({
+                    EN: 'Skills',
+                    FR: 'Compétences',
+                }[l],
+                    h('span', {id: 'skills'}, [
+                        Skill('C++', 4),
+                        Skill('Maths', 4),
+                        Skill('OpenGL', 4),
+                        Skill('Processing / p5.js', 5),
+                        Skill('glsl', 4),
+                        Skill('Unity', 3),
+                        Skill('Typescript', 4),
+                        Skill('Hyperapp (JS framework)', 4),
+                    ])
+                ),
+            ]),
+            h('div',
+            {
+                id: 'column2',
+            },
+            [
+                text('col2')
+            ]),
         ])
-        ),
     ])
 ])
 }

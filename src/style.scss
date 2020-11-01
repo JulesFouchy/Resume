@@ -35,6 +35,17 @@ html {
     flex-direction: column;
 }
 
+#columns-wrapper {
+    display: flex;
+}
+#column1 {
+    border-right: 1px solid;
+    flex: 1;
+}
+#column2 {
+    flex: 1;
+}
+
 .jauge {
     display: flex;
 }
