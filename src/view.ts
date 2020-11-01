@@ -51,7 +51,10 @@ return h(
                         Skill('glsl', 4),
                         Skill('Unity', 3),
                         Skill('Typescript', 4),
-                        Skill('Hyperapp (JS framework)', 4),
+                        Skill({
+                            EN: 'Hyperapp (JS framework)',
+                            FR: 'Hyperapp (framework JS)',
+                        }[l], 4),
                     ])
                 ),
             ]),
