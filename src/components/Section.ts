@@ -11,10 +11,7 @@ const sectionTitle = (title: string) => h(
 export default (title: string, children) => h(
     'div',
 {
-
+    class: 'section'
 },
-[
-    sectionTitle(title),
-    children
-]
+    Array.isArray(children) ? [sectionTitle(title), ...children] : [sectionTitle(title), children]
 )
