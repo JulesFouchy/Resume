@@ -57,6 +57,73 @@ return h(
                         }[l], 4),
                     ])
                 ),
+                Section({
+                    EN: 'Education',
+                    FR: 'Études',
+                }[l],
+                [
+                    h('b', {}, text({
+                        EN: 'IMAC Creative Engineer',
+                        FR: 'Ingénieur Créatif IMAC',
+                    }[l])),
+                    h('span', {}, text({
+                        EN: 'Université Gustave Eiffel',
+                        FR: 'Université Gustave Eiffel',
+                    }[l])),
+                    h('i', {}, text({
+                        EN: 'September 2018 - today',
+                        FR: 'Septembre 2018 - aujourd\'hui',
+                    }[l])),
+                    h('br', {}),
+                    h('b', {}, text({
+                        EN: 'Preparatory class in mathematics and physics',
+                        FR: 'Classe préparatoire en mathématiques et physique (MPSI-MP)',
+                    }[l])),
+                    h('span', {}, text({
+                        EN: 'Lycée Saint-Louis, Paris',
+                        FR: 'Lycée Saint-Louis, Paris',
+                    }[l])),
+                    h('i', {}, text({
+                        EN: 'September 2015 - June 2018',
+                        FR: 'Septembre 2015 - Juin 2018',
+                    }[l])),
+                ]),
+                Section({
+                    EN: 'Languages',
+                    FR: 'Langues',
+                }[l],
+                [
+                    h('span', {}, [
+                        h('b', {}, text({
+                            EN: 'French',
+                            FR: 'Français',
+                        }[l])),
+                        h('span', {}, text({
+                            EN: ' (Native)',
+                            FR: ' (Natif)',
+                        }[l]))
+                    ]),
+                    h('span', {}, [
+                        h('b', {}, text({
+                            EN: 'English',
+                            FR: 'Anglais',
+                        }[l])),
+                        h('span', {}, text({
+                            EN: ' (Fluent)',
+                            FR: ' (Courant)',
+                        }[l]))
+                    ]),
+                    h('span', {}, [
+                        h('b', {}, text({
+                            EN: 'German',
+                            FR: 'Allemand',
+                        }[l])),
+                        h('span', {}, text({
+                            EN: ' (Intermediate)',
+                            FR: ' (Intermédiaire)',
+                        }[l]))
+                    ]),
+                ]
             ]),
             h('div',
             {

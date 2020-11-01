@@ -46,6 +46,11 @@ html {
     flex: 1;
 }
 
+.section {
+    display: flex;
+    flex-direction: column;
+}
+
 .jauge {
     display: flex;
 }
