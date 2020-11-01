@@ -1,7 +1,24 @@
+$lightBlue: rgb(118, 210, 245);
+
 html {
     background-color: #252525;
     display: flex;
     justify-content: center;
+}
+
+.language-selector {
+    color: rgb(235, 235, 235);
+    position: absolute;
+    top: 13px;
+    left: 13px;
+}
+
+.language-button {
+    cursor: pointer;
+    margin: 5px;
+    &.selected {
+        color: $lightBlue;
+    }
 }
 
 .white-page {
