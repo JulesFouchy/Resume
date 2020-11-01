@@ -1,0 +1,27 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "Resume",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "parcel ./src/index.html --open",
+    "prebuild": "rmdir docs /s /q",
+    "build": "parcel build ./src/index.html --out-dir docs --public-url ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JulesFouchy/Resume.git"
+  },
+  "author": "Jules Fouchy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JulesFouchy/Resume/issues"
+  },
+  "homepage": "https://github.com/JulesFouchy/Resume#readme",
+  "dependencies": {
+    "hyperapp": "^2.0.8"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.5"
+  }
+}
