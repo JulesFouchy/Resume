@@ -1,4 +1,4 @@
-import state from './state'
+import { state } from './state'
 import view from './view'
 import { app } from 'hyperapp'
 

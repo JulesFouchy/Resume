@@ -1,14 +1,9 @@
-enum Language {
-    EN,
-    FR,
-}
-
 interface State {
-    language: Language,
+    language: string,
 }
 
 const state: State = {
-    language: Language.EN,
+    language: 'EN',
 }
 
-export default state
+export { State, state }
