@@ -4,6 +4,7 @@ html {
     background-color: #252525;
     display: flex;
     justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .language-selector {
@@ -23,7 +24,7 @@ html {
 
 .white-page {
     background-color: rgb(250, 250, 250);
-    width: min(1200px, 80%);
+    width: 80vw;
     margin: 25px;
     padding: 15px;
 }
@@ -32,4 +33,60 @@ html {
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+.jauge {
+    display: flex;
+}
+
+.hexagon {
+    margin: 5px;
+}
+.innerHexagon {
+    background-color: white;
+    &.filled {
+        background: radial-gradient(circle, rgba(255,220,175,1) 0%, rgba(255,188,0,1) 100%);
+    }
+}
+.outerHexagon {
+    background-color: black;
+}
+
+// Hexagon
+$sqrt3: 1.73205;
+$hexWidth: 30px;
+$hexStrokeWeight: 2px;
+$hexagonalPath: polygon(
+    50%  16.67%, /* top       */
+    100% 33.33%, /* right-top */
+    100% 66.67%, /* right-bot */
+    50%  83.33%, /* bot       */
+    0%   66.67%, /* left-bot  */
+    0%   33.33%  /* left-top  */
+);
+.hexagon {
+    width: $hexWidth;
+    position: relative;
+    &:before {
+        display: block;
+        content: "";
+        width: 100%;
+        padding-top: 173.21%;
+    }
+    .innerHexagon {
+        clip-path: $hexagonalPath;
+        position: absolute;
+        left: $hexStrokeWeight * 0.5;
+        top:  $hexStrokeWeight * 0.5 * $sqrt3;
+        width:   $hexWidth - $hexStrokeWeight;
+        height: ($hexWidth - $hexStrokeWeight) * $sqrt3;
+    }
+    .outerHexagon {
+        clip-path: $hexagonalPath;
+        position: absolute;
+        left: - $hexStrokeWeight * 0.5;
+        top:  - $hexStrokeWeight * 0.5 * $sqrt3;
+        width:   $hexWidth + $hexStrokeWeight;
+        height: ($hexWidth + $hexStrokeWeight) * $sqrt3;
+    }
 }
