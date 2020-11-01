@@ -33,7 +33,16 @@ return h(
             EN: 'Skills',
             FR: 'Compétences',
         }[l],
-            Skill('C++', 4)
+        h('span', {id: 'skills'}, [
+            Skill('C++', 4),
+            Skill('Maths', 4),
+            Skill('OpenGL', 4),
+            Skill('Processing / p5.js', 5),
+            Skill('glsl', 4),
+            Skill('Unity', 3),
+            Skill('Typescript', 4),
+            Skill('Hyperapp (JS framework)', 4),
+        ])
         ),
     ])
 ])
