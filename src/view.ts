@@ -28,6 +28,18 @@ return h(
                 }[l])),
             ]
             ),
+            h('div', 
+            { 
+                id: 'contact-infos'
+            },
+            [
+                h('p', {}, h('i', {}, text('fouchy.jules@gmail.com'))),
+                h('p', {}, h('i', {}, text({
+                    EN: '+337 83 94 51 77',
+                    FR: '07 83 94 51 77',
+                }[l]))),
+            ]
+            )
         ]),
         h('div',
         {
