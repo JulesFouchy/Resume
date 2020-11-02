@@ -55,10 +55,17 @@ return h(
                     EN: 'Overview',
                     FR: 'En bref',
                 }[l],
+                [
                     text({
-                        EN: 'Software Engineering student',
-                        FR: 'Ingénieur Logiciel étudiant',
-                    }[l])
+                        EN: 'I have a passion for programming ; I love all the creative freedom it offers us. I am particularly interested in image generation (2d and 3D), fulfilling my artistic needs.',
+                        FR: "Passionné d'informatique, j'adore les possibilités de création infinie que cela nous offre. Je m'intéresse particulièrement à la génération d'images (2D et 3D), conciliant ainsi mon côté artistique.",
+                    }[l]),
+                    h('br', {}),
+                    text({
+                        EN: 'I also recently got interested in web technologies, since I discovered that the html can be fully generated with Javascript dynamically (and elegantly).',
+                        FR: "Récemment je me suis également découvert un intérêt pour les technologies web, depuis que j'ai réalisé qu'on pouvait se servir du Javascript pour générer le html dynamiquement (et élégamment).",
+                    }[l]),
+                ]
                 ),
                 Section({
                     EN: 'Skills',
@@ -69,7 +76,7 @@ return h(
                         Skill('Maths', 4),
                         Skill('OpenGL', 4),
                         Skill('Processing / p5.js', 5),
-                        Skill('glsl', 4),
+                        Skill('Shaders (glsl)', 4),
                         Skill('Unity', 3),
                         Skill('Typescript', 4),
                         Skill({
@@ -170,8 +177,8 @@ return h(
                         FR: 'Stage à Virtual Arts pour développer leur moteur de jeux',
                     }[l])),
                     h('i', {}, text({
-                        EN: 'September 2019 - today',
-                        FR: 'Septembre 2019 - aujourd\'hui',
+                        EN: 'June 2020 - September 2020',
+                        FR: 'Juin 2020 - Septembre 2020',
                     }[l])),
                     h('br', {}),
                     h('b', {}, text({
@@ -221,8 +228,8 @@ return h(
                         GithubLink('https://github.com/guillaume-haerinck/imac-tower-defense'),
                     ]),
                     h('span', {}, text({
-                        EN: 'A tower defense game based on redirecting lasers through mirrors.',
-                        FR: 'Un jeu de tower defense basé sur la redirection de lasers avec des miroirs.',
+                        EN: 'A tower defense game based on redirecting lasers through mirrors, built with an ECS architecture.',
+                        FR: 'Un jeu de tower defense basé sur la redirection de lasers avec des miroirs, construit avec une architecture ECS.',
                     }[l])),
                     h('br', {}),
                     h('span', {}, [
@@ -230,8 +237,8 @@ return h(
                         GithubLink('https://github.com/JulesFouchy/Tangram2'),
                     ]),
                     h('span', {}, text({
-                        EN: 'A 2D image software mainly focused on the possibility to write your own fragment shaders (in a Shadertoy-like fashion).',
-                        FR: 'Un logiciel de dessin 2D, essentiellement basé sur la possibilité d\'écrire ses propres fragment shaders.',
+                        EN: 'A 2D drawing software mainly focused on the possibility to write your own fragment shaders (in a Shadertoy-like fashion).',
+                        FR: 'Un logiciel de dessin 2D, essentiellement basé sur la possibilité d\'écrire ses propres fragment shaders (à la Shadertoy).',
                     }[l])),
                 ]
                 ),
