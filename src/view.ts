@@ -146,6 +146,15 @@ return h(
                     }[l])),
                     h('br', {}),
                     h('b', {}, text({
+                        EN: 'Internship at Virtual Arts to work on their game engine',
+                        FR: 'Stage à Virtual Arts pour développer leur moteur de jeux',
+                    }[l])),
+                    h('i', {}, text({
+                        EN: 'September 2019 - today',
+                        FR: 'Septembre 2019 - aujourd\'hui',
+                    }[l])),
+                    h('br', {}),
+                    h('b', {}, text({
                         EN: 'Initiation to programming for teenagers at Centre Paris Anim\' Victor Gelez',
                         FR: 'Initiation à la programmation pour les 10-12 ans au Centre Paris Anim\' Victor Gelez',
                     }[l])),
