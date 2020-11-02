@@ -15,11 +15,19 @@ return h(
     LanguageSelector(state),
     WhitePage([
         Header([
-            h('p', {}, text('Jules Fouchy')),
-            h('p', {}, text({
-                EN: 'Software Engineering student',
-                FR: 'Ingénieur Informatique étudiant',
-            }[l])),
+            h('h2', {id: 'myName'}, text('Jules Fouchy')),
+            h('h2', {id: 'myTitle'}, 
+            [
+                h('span', {}, text({
+                    EN: 'Software Engineer',
+                    FR: 'Ingénieur Informatique',
+                }[l])),
+                h('span', {}, text({
+                    EN: 'student',
+                    FR: 'étudiant',
+                }[l])),
+            ]
+            ),
         ]),
         h('div',
         {
