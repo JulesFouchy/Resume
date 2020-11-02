@@ -1,6 +1,7 @@
 import { h, text } from 'hyperapp'
 import { State } from './state'
 import { GithubLink, WebsiteLink } from './components/Link'
+import LineJump from './components/LineJump'
 import WhitePage from './components/WhitePage'
 import Header from './components/Header'
 import LanguageSelector from './components/LanguageSelector'
@@ -102,7 +103,7 @@ return h(
                         EN: 'September 2018 - today',
                         FR: 'Septembre 2018 - aujourd\'hui',
                     }[l])),
-                    h('br', {}),
+                    LineJump(),
                     h('b', {}, text({
                         EN: 'Preparatory class in mathematics and physics',
                         FR: 'Classe préparatoire en mathématiques et physique (MPSI-MP)',
@@ -171,7 +172,7 @@ return h(
                         EN: 'September 2019 - today',
                         FR: 'Septembre 2019 - aujourd\'hui',
                     }[l])),
-                    h('br', {}),
+                    LineJump(),
                     h('b', {}, text({
                         EN: 'Internship at Virtual Arts to work on their game engine',
                         FR: 'Stage à Virtual Arts pour développer leur moteur de jeux',
@@ -180,7 +181,7 @@ return h(
                         EN: 'June 2020 - September 2020',
                         FR: 'Juin 2020 - Septembre 2020',
                     }[l])),
-                    h('br', {}),
+                    LineJump(),
                     h('b', {}, text({
                         EN: 'Initiation to programming for teenagers at Centre Paris Anim\' Victor Gelez',
                         FR: 'Initiation à la programmation pour les 10-12 ans au Centre Paris Anim\' Victor Gelez',
@@ -189,7 +190,7 @@ return h(
                         EN: 'September 2019 - June 2020',
                         FR: 'Septembre 2019 - Juin 2020',
                     }[l])),
-                    h('br', {}),
+                    LineJump(),
                     h('b', {}, text({
                         EN: 'Maths private courses',
                         FR: 'Cours particuliers de mathématiques',
@@ -213,7 +214,7 @@ return h(
                         EN: 'A VJing software based on a particle system, powered by compute shaders.',
                         FR: 'Un logiciel de VJing basé sur un système de particules, propulsé par des compute shaders.',
                     }[l])),
-                    h('br', {}),
+                    LineJump(),
                     h('span', {}, [
                         h('b', {}, text('Imacubes')),
                         GithubLink('https://github.com/JulesFouchy/IMACUBES'),
@@ -222,7 +223,7 @@ return h(
                         EN: 'A voxel editor offering a few tools and procedural terrain generation, supporting user-written shaders, shadows and ambient occlusion.',
                         FR: 'Un éditeur de voxels offrant quelques outils et de la génération procédurale de terrain, avec des shaders customisables, ombres et occlusion ambiante.',
                     }[l])),
-                    h('br', {}),
+                    LineJump(),
                     h('span', {}, [
                         h('b', {}, text('Mirror, Lasers & Robots')),
                         GithubLink('https://github.com/guillaume-haerinck/imac-tower-defense'),
@@ -231,7 +232,7 @@ return h(
                         EN: 'A tower defense game based on redirecting lasers through mirrors, built with an ECS architecture.',
                         FR: 'Un jeu de tower defense basé sur la redirection de lasers avec des miroirs, construit avec une architecture ECS.',
                     }[l])),
-                    h('br', {}),
+                    LineJump(),
                     h('span', {}, [
                         h('b', {}, text('Tangram')),
                         GithubLink('https://github.com/JulesFouchy/Tangram2'),
@@ -256,7 +257,7 @@ return h(
                         EN: 'An online version of the Dixit board game.',
                         FR: 'Une version en ligne du jeu de société Dixit.',
                     }[l])),
-                    h('br', {}),
+                    LineJump(),
                     h('span', {}, [
                         h('b', {}, text('DixImac Gallery')),
                         GithubLink('https://github.com/JulesFouchy/DixImacGallery'),
@@ -266,7 +267,7 @@ return h(
                         EN: 'A website to showcase the custom cards made for the DixImac game.',
                         FR: 'Un site web pour exposer les cartes créées spécialement pour le jeu DixImac.',
                     }[l])),
-                    h('br', {}),
+                    LineJump(),
                     h('span', {}, [
                         h('b', {}, text('Arcade Terminal of Photography')),
                         GithubLink('https://github.com/JulesFouchy/ArcadeTerminalOfPhotography'),
