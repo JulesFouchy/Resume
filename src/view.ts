@@ -187,8 +187,8 @@ return h(
                     }[l])),
                     LineJump(),
                     h('b', {}, text({
-                        EN: 'Internship at Virtual Arts to work on their game engine',
-                        FR: 'Stage à Virtual Arts pour développer leur moteur de jeux',
+                        EN: 'Internship at Virtual Arts (Cambridge, UK) to work on their game engine',
+                        FR: 'Stage à Virtual Arts (Cambridge, Royaume-Uni) pour développer leur moteur de jeux',
                     }[l])),
                     h('i', {}, text({
                         EN: 'June 2020 - September 2020',
