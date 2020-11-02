@@ -21,7 +21,7 @@ export default (name: string, level: number) => h(
 
 },
 [
-    text(name),
+    h('b', {}, text(name)),
     Jauge(level)
 ]
 )

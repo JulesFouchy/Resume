@@ -18,7 +18,7 @@ return h(
             h('p', {}, text('Jules Fouchy')),
             h('p', {}, text({
                 EN: 'Software Engineering student',
-                FR: 'Ingénieur Logiciel étudiant',
+                FR: 'Ingénieur Informatique étudiant',
             }[l])),
         ]),
         h('div',
