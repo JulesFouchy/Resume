@@ -70,6 +70,16 @@ html {
     grid-template-columns: 1fr 1fr;
 }
 
+a {
+    text-decoration: none ;
+    font-size: 18px;
+    img {
+        margin: 5px;
+        margin-bottom: -2.5px;
+        width: 18px;
+    }
+}
+
 // Hexagon
 $sqrt3: 1.73205;
 $hexWidth: 23px;

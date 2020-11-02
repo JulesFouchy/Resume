@@ -1,3 +1,7 @@
 import { h, text } from 'hyperapp'
+import githubIcon from '../img/github.png'
 
-export default (link: string) => h('a', { href: link }, text(link))
+const GithubLink = (link: string) => h('a', { href: link }, h('img', { src: githubIcon }))
+const WebsiteLink = (link: string) => h('a', { href: link }, text('🌐'))
+
+export { GithubLink, WebsiteLink }
