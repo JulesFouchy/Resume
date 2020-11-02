@@ -1,10 +1,25 @@
 $lightBlue: rgb(118, 210, 245);
 
+@font-face {
+    font-family: Lora;
+    src: url(./font/Lora/Lora-Regular.ttf);
+}
+@font-face {
+    font-family: Lora;
+    font-weight: bold;
+    src: url(./font/Lora/Lora-Bold.ttf);
+}
+// @font-face {
+//     font-family: Lora;
+//     font-weight: italic;
+//     src: url(./font/Lora/Lora-MediumItalic.ttf);
+// }
+
 html {
     background-color: #252525;
     display: flex;
     justify-content: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Lora, Georgia, 'Times New Roman', Times, serif;
     font-size: 16px;
 }
 
