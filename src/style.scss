@@ -9,16 +9,9 @@ $lightBlue: rgb(118, 210, 245);
     font-weight: bold;
     src: url(./font/Lora/Lora-Bold.ttf);
 }
-// @font-face {
-//     font-family: Lora;
-//     font-weight: italic;
-//     src: url(./font/Lora/Lora-MediumItalic.ttf);
-// }
 
 html {
     background-color: #252525;
-    display: flex;
-    justify-content: center;
     font-family: Lora, Georgia, 'Times New Roman', Times, serif;
     font-size: 16px;
 }
@@ -32,6 +25,7 @@ html {
     position: absolute;
     top: 13px;
     left: 13px;
+    z-index: 1;
 }
 
 .language-button {
@@ -46,7 +40,8 @@ html {
     position: relative;
     background-color: rgb(250, 250, 250);
     width: 80vw;
-    margin: 25px;
+    min-width: 610px;
+    margin: 25px auto;
     border-radius: 1px;
     padding: 30px 0;
     padding-right: 15px;
