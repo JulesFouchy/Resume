@@ -14,8 +14,8 @@ const tryFind = (identifier: string) => {
 }
 
 const getState = (): State => {
-    const language = tryFind('lang') || tryFind('language')
-    return language !== '' ? {...state, language} : state
+    const language = (tryFind('lang') || tryFind('language')).toUpperCase()
+    return (language === 'FR' || language === 'EN') ? {...state, language} : state
 }
 
 app({ 
