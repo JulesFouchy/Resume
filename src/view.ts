@@ -13,7 +13,7 @@ const l = state.language
 return h(
     'div', {},
 [
-    LanguageSelector(state),
+    // LanguageSelector(state),
     WhitePage([
         Header([
             h('h2', {id: 'myName'}, text('Jules Fouchy')),
