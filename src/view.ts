@@ -92,6 +92,19 @@ return h(
                 }[l],
                 [
                     h('b', {}, text({
+                        EN: 'Master\'s degree : Science of Images',
+                        FR: 'Master 2 Science de l\'Image',
+                    }[l])),
+                    h('span', {}, text({
+                        EN: 'Institut Gaspard Monge - Université Gustave Eiffel',
+                        FR: 'Institut Gaspard Monge - Université Gustave Eiffel',
+                    }[l])),
+                    h('i', {}, text({
+                        EN: 'September 2020 - today',
+                        FR: 'Septembre 2020 - aujourd\'hui',
+                    }[l])),
+                    LineJump(),
+                    h('b', {}, text({
                         EN: 'IMAC Creative Engineer',
                         FR: 'Ingénieur Créatif IMAC',
                     }[l])),
