@@ -58,7 +58,7 @@ return h(
                 }[l],
                 [
                     text({
-                        EN: 'I have a passion for programming ; I love all the creative freedom it offers us. I am particularly interested in image generation (2d and 3D), fulfilling my artistic needs.',
+                        EN: 'I have a passion for programming ; I love all the creative freedom it offers us. I am particularly interested in image generation (2D and 3D), fulfilling my artistic needs.',
                         FR: "Passionné d'informatique, j'adore les possibilités de création infinie que cela nous offre. Je m'intéresse particulièrement à la génération d'images (2D et 3D), conciliant ainsi mon côté artistique.",
                     }[l]),
                     h('br', {}),
