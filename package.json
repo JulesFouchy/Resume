@@ -2,7 +2,6 @@
   "name": "resume",
   "version": "1.0.0",
   "description": "Resume",
-  "main": "index.ts",
   "scripts": {
     "dev": "parcel ./src/index.html --open",
     "prebuild": "rmdir docs /s /q",
@@ -22,6 +21,7 @@
     "hyperapp": "^2.0.8"
   },
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.0",
     "cssnano": "^4.1.10",
     "sass": "^1.28.0",
     "typescript": "^4.0.5"
