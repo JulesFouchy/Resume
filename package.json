@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "parcel ./src/index.html --open",
     "prebuild": "rmdir docs /s /q",
-    "build": "parcel build ./src/index.html --out-dir docs --public-url ./"
+    "build": "parcel build ./src/index.html --dist-dir docs --public-url ./"
   },
   "repository": {
     "type": "git",
