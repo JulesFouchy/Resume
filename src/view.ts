@@ -86,6 +86,9 @@ export default (state: State) => {
                             EN: 'Hyperapp (JS framework)',
                             FR: 'Hyperapp (framework JS)',
                         }[l], 4),
+                        Skill('Python', 2),
+                        Skill('Machine Learning', 2),
+                        Skill('C#', 3),
                     ])
                 ),
                 Section({
@@ -181,7 +184,7 @@ export default (state: State) => {
                 [
                     h('b', {}, text({
                         EN: 'Internship at Ubisoft, as an Engine Programmer Assistant',
-                        FR: "Stage à Ubisoft, en tant que Programmeur Moteur Assistant",
+                        FR: 'Stage à Ubisoft, en tant que Programmeur Moteur Assistant',
                     }[l])),
                     h('i', {}, text({
                         EN: 'April 2021 - September 2021',
@@ -190,7 +193,7 @@ export default (state: State) => {
                     LineJump(),
                     h('b', {}, text({
                         EN: 'Teaching computer art at IMAC',
-                        FR: "Cours d'art génératif à l'IMAC",
+                        FR: 'Cours d\'art génératif à l\'IMAC',
                     }[l])),
                     h('i', {}, text({
                         EN: 'September 2020 - today',
@@ -245,7 +248,7 @@ export default (state: State) => {
                     ]),
                     h('span', {}, text({
                         EN: 'A C++ framework designed for computer graphics software.',
-                        FR: "Un framework C++ pour les logiciels d'infographie.",
+                        FR: 'Un framework C++ pour les logiciels d\'infographie.',
                     }[l])),
                     LineJump(),
                     h('span', {}, [
@@ -254,7 +257,7 @@ export default (state: State) => {
                     ]),
                     h('span', {}, text({
                         EN: 'A patchwork of generative art tools, based on Cool. It features a node-based editor for distance field modeling.',
-                        FR: "Un patchwork d'outils d'art génératif, basé sur Cool. On y trouve notamment un éditeur nodal pour de la géométrie en champs de distance.",
+                        FR: 'Un patchwork d\'outils d\'art génératif, basé sur Cool. On y trouve notamment un éditeur nodal pour de la géométrie en champs de distance.',
                     }[l])),
                     LineJump(),
                     h('span', {}, [
