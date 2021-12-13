@@ -31,7 +31,7 @@ export default (state: State) => {
                 id: 'contact-infos'
             },
             [
-                h('p', {}, h('i', {}, text('fouchy.jules@gmail.com'))),
+                h('p', {}, h('i', {}, text('jules.fouchy@ntymail.com'))),
                 h('p', {}, h('i', {}, text({
                     EN: '+337 83 94 51 77',
                     FR: '07 83 94 51 77',
@@ -55,13 +55,13 @@ export default (state: State) => {
                 }[l],
                 [
                     text({
-                        EN: 'I have a passion for programming ; I love all the creative freedom it offers us. I am particularly interested in 2D and 3D image generation, fulfilling my artistic needs.',
-                        FR: 'Passionné d\'informatique, j\'adore les possibilités de création infinie que cela nous offre. Je m\'intéresse particulièrement à la génération d\'images en 2D et 3D, conciliant ainsi mon côté artistique.',
+                        EN: 'I have a passion for programming ; I love all the creative freedom it offers us. I am particularly interested in 2D and 3D image generation, fulfilling my artistic interests.',
+                        FR: 'Passionné de programmation, j\'adore les possibilités de création infinies que cela nous offre. Je m\'intéresse particulièrement à la génération d\'images en 2D et 3D, conciliant ainsi mon côté artistique.',
                     }[l]),
                     h('br', {}),
                     text({
-                        EN: 'I also recently got interested in web technologies, since I discovered that the html can be fully generated with Javascript dynamically (and elegantly).',
-                        FR: 'Récemment je me suis également découvert un intérêt pour les technologies web, depuis que j\'ai réalisé qu\'on pouvait se servir du Javascript pour générer le html dynamiquement (et élégamment).',
+                        EN: 'I also appreciate web technologies for their versatility and the possibility to share content with the world.',
+                        FR: 'J\'apprécie également les technologies web pour leur versatilité et les possibilités de partage de contenu qu\'elles nous offrent.',
                     }[l]),
                 ]
                 ),
@@ -82,11 +82,12 @@ export default (state: State) => {
                         Skill('Vulkan', 3),
                         Skill('Typescript / Javascript', 4),
                         Skill('Shaders (glsl)', 4),
-                        Skill({
-                            EN: 'Hyperapp (JS framework)',
-                            FR: 'Hyperapp (framework JS)',
-                        }[l], 4),
+                        Skill('React', 3),
                         Skill('Python', 2),
+                        Skill({
+                            EN: 'Static Site Generators',
+                            FR: 'Générateurs de sites statiques',
+                        }[l], 4),
                         Skill('Machine Learning', 2),
                         Skill('C#', 3),
                     ])
@@ -192,7 +193,7 @@ export default (state: State) => {
                     }[l])),
                     LineJump(),
                     h('b', {}, text({
-                        EN: 'Teaching computer art at IMAC',
+                        EN: 'Teaching generative art at IMAC',
                         FR: 'Cours d\'art génératif à l\'IMAC',
                     }[l])),
                     h('i', {}, text({
@@ -244,7 +245,7 @@ export default (state: State) => {
                 [
                     h('span', {}, [
                         h('b', {}, text('Cool')),
-                        GithubLink('https://github.com/CoolLibs/Cool'),
+                        GithubLink('https://github.com/CoolLibs'),
                     ]),
                     h('span', {}, text({
                         EN: 'A C++ framework designed for computer graphics software.',
