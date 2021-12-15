@@ -2,11 +2,11 @@
   "name": "resume",
   "version": "1.0.0",
   "description": "Resume",
-  "main": "index.ts",
   "scripts": {
+    "start": "npm run dev",
     "dev": "parcel ./src/index.html --open",
     "prebuild": "rmdir docs /s /q",
-    "build": "parcel build ./src/index.html --out-dir docs --public-url ./"
+    "build": "parcel build ./src/index.html --dist-dir docs --public-url ./"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,7 @@
     "hyperapp": "^2.0.8"
   },
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.0",
     "cssnano": "^4.1.10",
     "sass": "^1.28.0",
     "typescript": "^4.0.5"

@@ -1,16 +1,17 @@
-import { h, text } from 'hyperapp'
-import { State } from './state'
-import { GithubLink, WebsiteLink } from './components/Link'
-import LineJump from './components/LineJump'
-import WhitePage from './components/WhitePage'
+import {h, text} from 'hyperapp'
+
 import Header from './components/Header'
 import LanguageSelector from './components/LanguageSelector'
+import LineJump from './components/LineJump'
+import {GithubLink, WebsiteLink} from './components/Link'
 import Section from './components/Section'
 import Skill from './components/Skill'
+import WhitePage from './components/WhitePage'
+import {State} from './state'
 
 export default (state: State) => {
-const l = state.language
-return h(
+  const l = state.language
+  return h(
     'div', {},
 [
     // LanguageSelector(state),
@@ -23,10 +24,6 @@ return h(
                     EN: 'Software Engineer',
                     FR: 'Ingénieur Informatique',
                 }[l])),
-                h('span', {}, text({
-                    EN: 'student',
-                    FR: 'étudiant',
-                }[l])),
             ]
             ),
             h('div', 
@@ -34,7 +31,7 @@ return h(
                 id: 'contact-infos'
             },
             [
-                h('p', {}, h('i', {}, text('fouchy.jules@gmail.com'))),
+                h('p', {}, h('i', {}, text('jules.fouchy@ntymail.com'))),
                 h('p', {}, h('i', {}, text({
                     EN: '+337 83 94 51 77',
                     FR: '07 83 94 51 77',
@@ -58,13 +55,13 @@ return h(
                 }[l],
                 [
                     text({
-                        EN: 'I have a passion for programming ; I love all the creative freedom it offers us. I am particularly interested in image generation (2d and 3D), fulfilling my artistic needs.',
-                        FR: "Passionné d'informatique, j'adore les possibilités de création infinie que cela nous offre. Je m'intéresse particulièrement à la génération d'images (2D et 3D), conciliant ainsi mon côté artistique.",
+                        EN: 'I have a passion for programming ; I love all the creative freedom it offers us. I am particularly interested in 2D and 3D image generation, fulfilling my artistic interests.',
+                        FR: 'Passionné de programmation, j\'adore les possibilités de création infinies que cela nous offre. Je m\'intéresse particulièrement à la génération d\'images en 2D et 3D, conciliant ainsi mon côté artistique.',
                     }[l]),
                     h('br', {}),
                     text({
-                        EN: 'I also recently got interested in web technologies, since I discovered that the html can be fully generated with Javascript dynamically (and elegantly).',
-                        FR: "Récemment je me suis également découvert un intérêt pour les technologies web, depuis que j'ai réalisé qu'on pouvait se servir du Javascript pour générer le html dynamiquement (et élégamment).",
+                        EN: 'I also appreciate web technologies for their versatility and the possibility to share content with the world.',
+                        FR: 'J\'apprécie également les technologies web pour leur versatilité et les possibilités de partage de contenu qu\'elles nous offrent.',
                     }[l]),
                 ]
                 ),
@@ -75,15 +72,24 @@ return h(
                     h('span', {id: 'skills'}, [
                         Skill('C++', 4),
                         Skill('Maths', 4),
-                        Skill('OpenGL', 4),
-                        Skill('Processing / p5.js', 5),
-                        Skill('Shaders (glsl)', 4),
-                        Skill('Unity', 3),
-                        Skill('Typescript', 4),
                         Skill({
-                            EN: 'Hyperapp (JS framework)',
-                            FR: 'Hyperapp (framework JS)',
+                            EN: 'Software Architecture',
+                            FR: 'Architecture Logicielle',
                         }[l], 4),
+                        Skill('Processing / p5.js', 5),
+                        Skill('OpenGL', 4),
+                        Skill('Unity', 3),
+                        Skill('Vulkan', 3),
+                        Skill('Typescript / Javascript', 4),
+                        Skill('Shaders (glsl)', 4),
+                        Skill('React', 3),
+                        Skill('Python', 2),
+                        Skill({
+                            EN: 'Static Site Generators',
+                            FR: 'Générateurs de sites statiques',
+                        }[l], 4),
+                        Skill('Machine Learning', 2),
+                        Skill('C#', 3),
                     ])
                 ),
                 Section({
@@ -91,6 +97,19 @@ return h(
                     FR: 'Études',
                 }[l],
                 [
+                    h('b', {}, text({
+                        EN: 'Master\'s degree: Science of Images',
+                        FR: 'Master 2 : Science de l\'Image',
+                    }[l])),
+                    h('span', {}, text({
+                        EN: 'Institut Gaspard Monge - Université Gustave Eiffel',
+                        FR: 'Institut Gaspard Monge - Université Gustave Eiffel',
+                    }[l])),
+                    h('i', {}, text({
+                        EN: 'September 2020 - June 2021',
+                        FR: 'Septembre 2020 - Juin 2021',
+                    }[l])),
+                    LineJump(),
                     h('b', {}, text({
                         EN: 'IMAC Creative Engineer',
                         FR: 'Ingénieur Créatif IMAC',
@@ -100,8 +119,8 @@ return h(
                         FR: 'Université Gustave Eiffel',
                     }[l])),
                     h('i', {}, text({
-                        EN: 'September 2018 - today',
-                        FR: 'Septembre 2018 - aujourd\'hui',
+                        EN: 'September 2018 - June 2021',
+                        FR: 'Septembre 2018 - Juin 2021',
                     }[l])),
                     LineJump(),
                     h('b', {}, text({
@@ -165,17 +184,35 @@ return h(
                 }[l],
                 [
                     h('b', {}, text({
-                        EN: 'Maths courses at IMAC',
-                        FR: 'Cours de maths à l\'IMAC',
+                        EN: 'Internship at Ubisoft, as an Engine Programmer Assistant',
+                        FR: 'Stage à Ubisoft, en tant que Programmeur Moteur Assistant',
                     }[l])),
                     h('i', {}, text({
-                        EN: 'September 2019 - today',
-                        FR: 'Septembre 2019 - aujourd\'hui',
+                        EN: 'April 2021 - September 2021',
+                        FR: 'Avril 2021 - Septembre 2021',
                     }[l])),
                     LineJump(),
                     h('b', {}, text({
-                        EN: 'Internship at Virtual Arts to work on their game engine',
-                        FR: 'Stage à Virtual Arts pour développer leur moteur de jeux',
+                        EN: 'Teaching generative art at IMAC',
+                        FR: 'Cours d\'art génératif à l\'IMAC',
+                    }[l])),
+                    h('i', {}, text({
+                        EN: 'September 2020 - today',
+                        FR: 'Septembre 2020 - aujourd\'hui',
+                    }[l])),
+                    LineJump(),
+                    h('b', {}, text({
+                        EN: 'Teaching mathematics at IMAC',
+                        FR: 'Cours de mathématiques à l\'IMAC',
+                    }[l])),
+                    h('i', {}, text({
+                        EN: 'September 2019 - June 2021',
+                        FR: 'Septembre 2019 - Juin 2021',
+                    }[l])),
+                    LineJump(),
+                    h('b', {}, text({
+                        EN: 'Internship at Virtual Arts (Cambridge, UK) to work on their game engine',
+                        FR: 'Stage à Virtual Arts (Cambridge, Royaume-Uni) pour développer leur moteur de jeux',
                     }[l])),
                     h('i', {}, text({
                         EN: 'June 2020 - September 2020',
@@ -183,7 +220,7 @@ return h(
                     }[l])),
                     LineJump(),
                     h('b', {}, text({
-                        EN: 'Initiation to programming for teenagers at Centre Paris Anim\' Victor Gelez',
+                        EN: 'Teaching programming for teenagers at Centre Paris Anim\' Victor Gelez',
                         FR: 'Initiation à la programmation pour les 10-12 ans au Centre Paris Anim\' Victor Gelez',
                     }[l])),
                     h('i', {}, text({
@@ -207,6 +244,24 @@ return h(
                 }[l],
                 [
                     h('span', {}, [
+                        h('b', {}, text('Cool')),
+                        GithubLink('https://github.com/CoolLibs'),
+                    ]),
+                    h('span', {}, text({
+                        EN: 'A C++ framework designed for computer graphics software.',
+                        FR: 'Un framework C++ pour les logiciels d\'infographie.',
+                    }[l])),
+                    LineJump(),
+                    h('span', {}, [
+                        h('b', {}, text('CoolLab')),
+                        GithubLink('https://github.com/coolLibs/coolLab'),
+                    ]),
+                    h('span', {}, text({
+                        EN: 'A patchwork of generative art tools, based on Cool. It features a node-based editor for distance field modeling.',
+                        FR: 'Un patchwork d\'outils d\'art génératif, basé sur Cool. On y trouve notamment un éditeur nodal pour de la géométrie en champs de distance.',
+                    }[l])),
+                    LineJump(),
+                    h('span', {}, [
                         h('b', {}, text('Django')),
                         GithubLink('https://github.com/JulesFouchy/Django'),
                     ]),
@@ -218,6 +273,10 @@ return h(
                     h('span', {}, [
                         h('b', {}, text('Imacubes')),
                         GithubLink('https://github.com/JulesFouchy/IMACUBES'),
+                        h('i', {}, text({
+                            EN: 'School project',
+                            FR: 'Projet scolaire',
+                        }[l])),
                     ]),
                     h('span', {}, text({
                         EN: 'A voxel editor offering a few tools and procedural terrain generation, supporting user-written shaders, shadows and ambient occlusion.',
@@ -227,6 +286,10 @@ return h(
                     h('span', {}, [
                         h('b', {}, text('Mirror, Lasers & Robots')),
                         GithubLink('https://github.com/guillaume-haerinck/imac-tower-defense'),
+                        h('i', {}, text({
+                            EN: 'School project',
+                            FR: 'Projet scolaire',
+                        }[l])),
                     ]),
                     h('span', {}, text({
                         EN: 'A tower defense game based on redirecting lasers through mirrors, built with an ECS architecture.',
