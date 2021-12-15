@@ -3,7 +3,7 @@ interface State {
 }
 
 const state: State = {
-    language: 'EN',
+    language: 'FR',
 }
 
 export { State, state }
