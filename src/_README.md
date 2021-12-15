@@ -1,0 +1,1 @@
+NB: to convert to PDF, https://pdfcrowd.com/ is amazing
