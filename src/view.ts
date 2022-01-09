@@ -55,7 +55,7 @@ export default (state: State) => {
                 }[l],
                 [
                     text({
-                        EN: 'I have a passion for programming ; I love all the creative freedom it offers us. I am particularly interested in 2D and 3D image generation, fulfilling my artistic interests.',
+                        EN: 'I am in love with programming; I enjoy all the creative freedom it offers us. I am particularly interested in 2D and 3D image generation, fulfilling my artistic interests.',
                         FR: 'Passionné de programmation, j\'adore les possibilités de création infinies que cela nous offre. Je m\'intéresse particulièrement à la génération d\'images en 2D et 3D, conciliant ainsi mon côté artistique.',
                     }[l]),
                     h('br', {}),
@@ -257,7 +257,7 @@ export default (state: State) => {
                         GithubLink('https://github.com/coolLibs/coolLab'),
                     ]),
                     h('span', {}, text({
-                        EN: 'A patchwork of generative art tools, based on Cool. It features a node-based editor for distance field modeling.',
+                        EN: 'A patchwork of tools for generative artists, based on Cool. It features a node-based editor for distance-field modeling.',
                         FR: 'Un patchwork d\'outils d\'art génératif, basé sur Cool. On y trouve notamment un éditeur nodal pour de la géométrie en champs de distance.',
                     }[l])),
                     LineJump(),
@@ -337,7 +337,7 @@ export default (state: State) => {
                         WebsiteLink('https://julesfouchy.github.io/ArcadeTerminalOfPhotography/'),
                     ]),
                     h('span', {}, text({
-                        EN: 'A simple photo editor, meant to explain the basics of images and their digital representation as pixels.',
+                        EN: 'A simple picture editor, meant to explain the basics of images and their digital representation as pixels.',
                         FR: 'Une petite application de retouche photo, destinée à expliquer quelques concepts de base sur les images et leur représentation en pixels.',
                     }[l])),
                 ]
