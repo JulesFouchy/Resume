@@ -254,7 +254,7 @@ export default (state: State) => {
                     LineJump(),
                     h('span', {}, [
                         h('b', {}, text('CoolLab')),
-                        GithubLink('https://github.com/coolLibs/coolLab'),
+                        GithubLink('https://github.com/CoolLibs/Lab'),
                     ]),
                     h('span', {}, text({
                         EN: 'A patchwork of tools for generative artists, based on Cool. It features a node-based editor for distance-field modeling.',
