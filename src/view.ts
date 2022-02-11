@@ -244,6 +244,16 @@ export default (state: State) => {
                 }[l],
                 [
                     h('span', {}, [
+                        h('b', {}, text('p6')),
+                        WebsiteLink('https://julesfouchy.github.io/p6-docs/'),
+                        GithubLink('https://github.com/JulesFouchy/p6'),
+                    ]),
+                    h('span', {}, text({
+                        EN: 'A simple C++ library for 2D drawing.',
+                        FR: 'Une librairie simple d\'utilisation pour faire du dessin 2D en C++.',
+                    }[l])),
+                    LineJump(),
+                    h('span', {}, [
                         h('b', {}, text('Cool')),
                         GithubLink('https://github.com/CoolLibs'),
                     ]),
@@ -303,6 +313,21 @@ export default (state: State) => {
                     h('span', {}, text({
                         EN: 'A 2D drawing software mainly focused on the possibility to write your own fragment shaders (in a Shadertoy-like fashion).',
                         FR: 'Un logiciel de dessin 2D, essentiellement basé sur la possibilité d\'écrire ses propres fragment shaders (à la Shadertoy).',
+                    }[l])),
+                ]
+                ),
+                Section({
+                    EN: 'Classes I teach',
+                    FR: 'Cours que j\'enseigne',
+                }[l],
+                [
+                    h('span', {}, [
+                        h('b', {}, text('Clean Code with C++')),
+                        WebsiteLink('https://julesfouchy.github.io/Learn--Clean-Code-With-Cpp/'),
+                    ]),
+                    h('span', {}, text({
+                        EN: 'Focused on software architecture and good coding practices.',
+                        FR: 'Sur l\'architecture logicielle et les bonnes pratiques de développement.',
                     }[l])),
                 ]
                 ),
