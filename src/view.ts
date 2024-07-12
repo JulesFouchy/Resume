@@ -21,8 +21,8 @@ export default (state: State) => {
             h('h2', {id: 'myTitle'}, 
             [
                 h('span', {}, text({
-                    EN: 'Software Engineer',
-                    FR: 'Ingénieur Informatique',
+                    EN: 'Software Engineer, specialized in Computer Graphics',
+                    FR: 'Ingénieur Informatique, spécialisé en Synthèse d\'Image',
                 }[l])),
             ]
             ),
@@ -80,14 +80,11 @@ export default (state: State) => {
                         Skill('OpenGL', 4),
                         Skill('Unity', 3),
                         Skill('Vulkan', 3),
+                        Skill('Python', 4),
+                        Skill('Shaders (glsl / hlsl)', 4),
                         Skill('Typescript / Javascript', 4),
-                        Skill('Shaders (glsl)', 4),
+                        Skill('Web', 3),
                         Skill('React', 3),
-                        Skill('Python', 2),
-                        Skill({
-                            EN: 'Static Site Generators',
-                            FR: 'Générateurs de sites statiques',
-                        }[l], 4),
                         Skill('Machine Learning', 2),
                         Skill('C#', 3),
                     ])
@@ -97,23 +94,13 @@ export default (state: State) => {
                     FR: 'Études',
                 }[l],
                 [
-                    h('b', {}, text({
-                        EN: 'Master\'s degree: Science of Images',
-                        FR: 'Master 2 : Science de l\'Image',
-                    }[l])),
-                    h('span', {}, text({
-                        EN: 'Institut Gaspard Monge - Université Gustave Eiffel',
-                        FR: 'Institut Gaspard Monge - Université Gustave Eiffel',
-                    }[l])),
-                    h('i', {}, text({
-                        EN: 'September 2020 - June 2021',
-                        FR: 'Septembre 2020 - Juin 2021',
-                    }[l])),
-                    LineJump(),
-                    h('b', {}, text({
-                        EN: 'IMAC Creative Engineer',
-                        FR: 'Ingénieur Créatif IMAC',
-                    }[l])),
+                    h('span', {}, [
+                        h('b', {}, text({
+                            EN: 'IMAC Creative Engineer',
+                            FR: 'Ingénieur Créatif IMAC',
+                        }[l])),
+                        WebsiteLink('https://www.ingenieur-imac.fr/'),
+                    ]),
                     h('span', {}, text({
                         EN: 'Université Gustave Eiffel',
                         FR: 'Université Gustave Eiffel',
@@ -123,10 +110,29 @@ export default (state: State) => {
                         FR: 'Septembre 2018 - Juin 2021',
                     }[l])),
                     LineJump(),
-                    h('b', {}, text({
-                        EN: 'Preparatory class in mathematics and physics',
-                        FR: 'Classe préparatoire en mathématiques et physique (MPSI-MP)',
+                    h('span', {}, [
+                        h('b', {}, text({
+                            EN: 'Master\'s degree: Science of Images',
+                            FR: 'Master 2 : Science de l\'Image',
+                        }[l])),
+                        WebsiteLink('https://igm.univ-gustave-eiffel.fr/formations/master-2-sciences-de-limage'),
+                    ]),
+                    h('span', {}, text({
+                        EN: 'Institut Gaspard Monge - Université Gustave Eiffel',
+                        FR: 'Institut Gaspard Monge - Université Gustave Eiffel',
                     }[l])),
+                    h('i', {}, text({
+                        EN: 'September 2020 - June 2021',
+                        FR: 'Septembre 2020 - Juin 2021',
+                    }[l])),
+                    LineJump(),
+                    h('span', {}, [
+                        h('b', {}, text({
+                            EN: 'Preparatory class in mathematics and physics (MPSI-MP)',
+                            FR: 'Classe préparatoire en mathématiques et physique (MPSI-MP)',
+                        }[l])),
+                        WebsiteLink('https://fr.wikipedia.org/wiki/Lyc%C3%A9e_Saint-Louis'),
+                    ]),
                     h('span', {}, text({
                         EN: 'Lycée Saint-Louis, Paris',
                         FR: 'Lycée Saint-Louis, Paris',
@@ -183,46 +189,100 @@ export default (state: State) => {
                     FR: 'Expériences professionnelles',
                 }[l],
                 [
-                    h('b', {}, text({
-                        EN: 'Internship at Ubisoft, as an Engine Programmer Assistant',
-                        FR: 'Stage à Ubisoft, en tant que Programmeur Moteur Assistant',
-                    }[l])),
+                    h('span', {}, [
+                        h('b', {}, text({
+                            EN: 'Teaching Programming, Math and Computer Graphics at ICAN',
+                            FR: 'Cours de Programmation, Mathématiques et Synthèse d\'Image à l\'ICAN',
+                        }[l])),
+                        WebsiteLink('https://www.ican-design.fr/'),
+                    ]),
                     h('i', {}, text({
-                        EN: 'April 2021 - September 2021',
-                        FR: 'Avril 2021 - Septembre 2021',
+                        EN: 'March 2024 - Today',
+                        FR: 'Mars 2024 - Aujourd\'hui',
                     }[l])),
                     LineJump(),
-                    h('b', {}, text({
-                        EN: 'Teaching generative art at IMAC',
-                        FR: 'Cours d\'art génératif à l\'IMAC',
-                    }[l])),
+                    h('span', {}, [
+                        h('b', {}, text({
+                            EN: 'Teaching C++ and Software Architecture at IMAC',
+                            FR: 'Cours de C++ et Architecture Logiciel à l\'IMAC',
+                        }[l])),
+                        WebsiteLink('https://julesfouchy.github.io/Learn--Clean-Code-With-Cpp/'),
+                        WebsiteLink('https://www.ingenieur-imac.fr/'),
+                    ]),
                     h('i', {}, text({
-                        EN: 'September 2020 - today',
-                        FR: 'Septembre 2020 - aujourd\'hui',
+                        EN: 'September 2021 - Today',
+                        FR: 'Septembre 2021 - Aujourd\'hui',
                     }[l])),
                     LineJump(),
-                    h('b', {}, text({
-                        EN: 'Teaching mathematics at IMAC',
-                        FR: 'Cours de mathématiques à l\'IMAC',
+                    h('span', {}, [
+                        h('b', {}, text({
+                            EN: 'Rendering Engine Programmer at Spiders',
+                            FR: 'Programmeur Moteur de Rendu chez Spiders',
+                        }[l])),
+                        WebsiteLink('https://www.spiders-games.com/'),
+                    ]),
+                    h('i', {}, text({
+                        EN: 'March 2022 - September 2023',
+                        FR: 'Mars 2022 - Septembre 2023',
                     }[l])),
+                    LineJump(),
+                    h('span', {}, [
+                        h('b', {}, text({
+                            EN: 'Teaching Creative Coding at IMAC',
+                            FR: 'Cours de Creative Coding à l\'IMAC',
+                        }[l])),
+                        WebsiteLink('https://julesfouchy.github.io/Learn--Generative-Art/'),
+                        WebsiteLink('https://www.ingenieur-imac.fr/'),
+                    ]),
+                    h('i', {}, text({
+                        EN: 'September 2020 - June 2022',
+                        FR: 'Septembre 2020 - Juin 2022',
+                    }[l])),
+                    LineJump(),
+                    h('span', {}, [
+                        h('b', {}, text({
+                            EN: 'Teaching Mathematics at IMAC',
+                            FR: 'Cours de Mathématiques à l\'IMAC',
+                        }[l])),
+                        WebsiteLink('https://julesfouchy.github.io/miscellaneous/soutien-maths'),
+                        WebsiteLink('https://www.ingenieur-imac.fr/'),
+                    ]),
                     h('i', {}, text({
                         EN: 'September 2019 - June 2021',
                         FR: 'Septembre 2019 - Juin 2021',
                     }[l])),
                     LineJump(),
-                    h('b', {}, text({
-                        EN: 'Internship at Virtual Arts (Cambridge, UK) to work on their game engine',
-                        FR: 'Stage à Virtual Arts (Cambridge, Royaume-Uni) pour développer leur moteur de jeux',
+                    h('span', {}, [
+                        h('b', {}, text({
+                            EN: 'Internship at Ubisoft on Unity, as an Engine Programmer Assistant on Just Dance',
+                            FR: 'Stage à Ubisoft sur Unity, en tant que Programmeur Moteur Assistant sur Just Dance',
+                        }[l])),
+                        WebsiteLink('https://www.ubisoft.com/en-us/company/about-us'),
+                    ]),
+                    h('i', {}, text({
+                        EN: 'April 2021 - September 2021',
+                        FR: 'Avril 2021 - Septembre 2021',
                     }[l])),
+                    LineJump(),
+                    h('span', {}, [
+                        h('b', {}, text({
+                            EN: 'Internship at Virtual Arts (Cambridge, UK) to work on their game engine',
+                            FR: 'Stage à Virtual Arts (Cambridge, Royaume-Uni) pour développer leur moteur de jeux',
+                        }[l])),
+                        WebsiteLink('https://www.virtualarts.co.uk/'),
+                    ]),
                     h('i', {}, text({
                         EN: 'June 2020 - September 2020',
                         FR: 'Juin 2020 - Septembre 2020',
                     }[l])),
                     LineJump(),
-                    h('b', {}, text({
-                        EN: 'Teaching programming for teenagers at Centre Paris Anim\' Victor Gelez',
-                        FR: 'Initiation à la programmation pour les 10-12 ans au Centre Paris Anim\' Victor Gelez',
-                    }[l])),
+                    h('span', {}, [
+                        h('b', {}, text({
+                            EN: 'Teaching programming for teenagers at Centre Paris Anim\' Victor Gelez',
+                            FR: 'Initiation à la programmation pour les 10-12 ans au Centre Paris Anim\' Victor Gelez',
+                        }[l])),
+                        WebsiteLink('https://cpa-victorgelez.ifac.asso.fr/'),
+                    ]),
                     h('i', {}, text({
                         EN: 'September 2019 - June 2020',
                         FR: 'Septembre 2019 - Juin 2020',
@@ -233,8 +293,8 @@ export default (state: State) => {
                         FR: 'Cours particuliers de mathématiques',
                     }[l])),
                     h('i', {}, text({
-                        EN: 'September 2017 - today',
-                        FR: 'Septembre 2017 - aujourd\'hui',
+                        EN: 'September 2017 - Today',
+                        FR: 'Septembre 2017 - Aujourd\'hui',
                     }[l])),
                 ]
                 ),
@@ -244,13 +304,23 @@ export default (state: State) => {
                 }[l],
                 [
                     h('span', {}, [
+                        h('b', {}, text('Coollab')),
+                        WebsiteLink('https://coollab-art.com/'),
+                        GithubLink('https://github.com/CoolLibs/Lab'),
+                    ]),
+                    h('span', {}, text({
+                        EN: 'A generative-art software with a node-based interface. Featuring 2D and 3D patterns and effects, particles, and more!',
+                        FR: 'Un logiciel d\'art génératif avec une interface nodale. Effets et motifs 2D et 3D, particules, et plein d\'autres !',
+                    }[l])),
+                    LineJump(),
+                    h('span', {}, [
                         h('b', {}, text('p6')),
                         WebsiteLink('https://julesfouchy.github.io/p6-docs/'),
                         GithubLink('https://github.com/JulesFouchy/p6'),
                     ]),
                     h('span', {}, text({
-                        EN: 'A simple C++ library for 2D drawing.',
-                        FR: 'Une librairie simple d\'utilisation pour faire du dessin 2D en C++.',
+                        EN: 'A simple C++ library for 2D drawing, inspired by p5.js',
+                        FR: 'Une librairie simple d\'utilisation pour faire du dessin 2D en C++, inspirée de p5.js',
                     }[l])),
                     LineJump(),
                     h('span', {}, [
@@ -259,16 +329,7 @@ export default (state: State) => {
                     ]),
                     h('span', {}, text({
                         EN: 'A C++ framework designed for computer graphics software.',
-                        FR: 'Un framework C++ pour les logiciels d\'infographie.',
-                    }[l])),
-                    LineJump(),
-                    h('span', {}, [
-                        h('b', {}, text('CoolLab')),
-                        GithubLink('https://github.com/CoolLibs/Lab'),
-                    ]),
-                    h('span', {}, text({
-                        EN: 'A patchwork of tools for generative artists, based on Cool. It features a node-based editor for distance-field modeling.',
-                        FR: 'Un patchwork d\'outils d\'art génératif, basé sur Cool. On y trouve notamment un éditeur nodal pour de la géométrie en champs de distance.',
+                        FR: 'Un framework C++ pour les logiciels basés sur de la synthèse d\'image.',
                     }[l])),
                     LineJump(),
                     h('span', {}, [
@@ -277,7 +338,7 @@ export default (state: State) => {
                     ]),
                     h('span', {}, text({
                         EN: 'A VJing software based on a particle system, powered by compute shaders.',
-                        FR: 'Un logiciel de VJing basé sur un système de particules, propulsé par des compute shaders.',
+                        FR: 'Un logiciel de VJing basé sur un système de particules, utilisant des compute shaders.',
                     }[l])),
                     LineJump(),
                     h('span', {}, [
@@ -289,8 +350,8 @@ export default (state: State) => {
                         }[l])),
                     ]),
                     h('span', {}, text({
-                        EN: 'A voxel editor offering a few tools and procedural terrain generation, supporting user-written shaders, shadows and ambient occlusion.',
-                        FR: 'Un éditeur de voxels offrant quelques outils et de la génération procédurale de terrain, avec des shaders customisables, ombres et occlusion ambiante.',
+                        EN: 'A voxel editor offering a few brushes and procedural terrain generation, supporting user-written shaders, shadows and ambient occlusion.',
+                        FR: 'Un éditeur de voxels offrant quelques brushs et de la génération procédurale de terrain, avec des shaders customisables, ombres et occlusion ambiante.',
                     }[l])),
                     LineJump(),
                     h('span', {}, [
@@ -302,8 +363,8 @@ export default (state: State) => {
                         }[l])),
                     ]),
                     h('span', {}, text({
-                        EN: 'A tower defense game based on redirecting lasers through mirrors, built with an ECS architecture.',
-                        FR: 'Un jeu de tower defense basé sur la redirection de lasers avec des miroirs, construit avec une architecture ECS.',
+                        EN: 'A tower defense game based on redirecting lasers through mirrors, written with an ECS architecture (Entity-Component-System).',
+                        FR: 'Un jeu de tower defense basé sur la redirection de lasers avec des miroirs, codé avec une architecture ECS (Entity-Component-System).',
                     }[l])),
                     LineJump(),
                     h('span', {}, [
@@ -317,21 +378,6 @@ export default (state: State) => {
                 ]
                 ),
                 Section({
-                    EN: 'Classes I teach',
-                    FR: 'Cours que j\'enseigne',
-                }[l],
-                [
-                    h('span', {}, [
-                        h('b', {}, text('Clean Code with C++')),
-                        WebsiteLink('https://julesfouchy.github.io/Learn--Clean-Code-With-Cpp/'),
-                    ]),
-                    h('span', {}, text({
-                        EN: 'Focused on software architecture and good coding practices.',
-                        FR: 'Sur l\'architecture logicielle et les bonnes pratiques de développement.',
-                    }[l])),
-                ]
-                ),
-                Section({
                     EN: 'Web Projects',
                     FR: 'Projets Web',
                 }[l],
@@ -339,30 +385,31 @@ export default (state: State) => {
                     h('span', {}, [
                         h('b', {}, text('DixImac')),
                         GithubLink('https://github.com/JulesFouchy/DixImac'),
-                        WebsiteLink('http://diximac.herokuapp.com/'),
+                        WebsiteLink('https://diximac.onrender.com'),
                     ]),
                     h('span', {}, text({
                         EN: 'An online version of the Dixit board game.',
                         FR: 'Une version en ligne du jeu de société Dixit.',
                     }[l])),
                     LineJump(),
-                    h('span', {}, [
-                        h('b', {}, text('DixImac Gallery')),
-                        GithubLink('https://github.com/JulesFouchy/DixImacGallery'),
-                        WebsiteLink('https://julesfouchy.github.io/DixImacGallery/'),
-                    ]),
-                    h('span', {}, text({
-                        EN: 'A website to showcase the custom cards made for the DixImac game.',
-                        FR: 'Un site web pour exposer les cartes créées spécialement pour le jeu DixImac.',
-                    }[l])),
-                    LineJump(),
+                    // Disabled because the site is down:
+                    // h('span', {}, [
+                    //     h('b', {}, text('DixImac Gallery')),
+                    //     GithubLink('https://github.com/JulesFouchy/DixImacGallery'),
+                    //     WebsiteLink('https://julesfouchy.github.io/DixImacGallery/'),
+                    // ]),
+                    // h('span', {}, text({
+                    //     EN: 'A website to showcase the custom cards made for the DixImac game.',
+                    //     FR: 'Un site web pour exposer les cartes créées spécialement pour le jeu DixImac.',
+                    // }[l])),
+                    // LineJump(),
                     h('span', {}, [
                         h('b', {}, text('Arcade Terminal of Photography')),
                         GithubLink('https://github.com/JulesFouchy/ArcadeTerminalOfPhotography'),
                         WebsiteLink('https://julesfouchy.github.io/ArcadeTerminalOfPhotography/'),
                     ]),
                     h('span', {}, text({
-                        EN: 'A simple picture editor, meant to explain the basics of images and their digital representation as pixels.',
+                        EN: 'A simple photo editor, meant to explain the basics of images and their digital representation as pixels.',
                         FR: 'Une petite application de retouche photo, destinée à expliquer quelques concepts de base sur les images et leur représentation en pixels.',
                     }[l])),
                 ]
