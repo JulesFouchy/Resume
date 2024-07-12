@@ -191,14 +191,14 @@ export default (state: State) => {
                 [
                     h('span', {}, [
                         h('b', {}, text({
-                            EN: 'Rendering Engine Programmer at Spiders',
-                            FR: 'Programmeur Moteur de Rendu chez Spiders',
+                            EN: 'Teaching Programming, Math and Computer Graphics at ICAN',
+                            FR: 'Cours de Programmation, Mathématiques et Synthèse d\'Image à l\'ICAN',
                         }[l])),
-                        WebsiteLink('https://www.spiders-games.com/'),
+                        WebsiteLink('https://www.ican-design.fr/'),
                     ]),
                     h('i', {}, text({
-                        EN: 'March 2022 - September 2023',
-                        FR: 'Mars 2022 - Septembre 2023',
+                        EN: 'March 2024 - Today',
+                        FR: 'Mars 2024 - Aujourd\'hui',
                     }[l])),
                     LineJump(),
                     h('span', {}, [
@@ -212,6 +212,18 @@ export default (state: State) => {
                     h('i', {}, text({
                         EN: 'September 2021 - Today',
                         FR: 'Septembre 2021 - Aujourd\'hui',
+                    }[l])),
+                    LineJump(),
+                    h('span', {}, [
+                        h('b', {}, text({
+                            EN: 'Rendering Engine Programmer at Spiders',
+                            FR: 'Programmeur Moteur de Rendu chez Spiders',
+                        }[l])),
+                        WebsiteLink('https://www.spiders-games.com/'),
+                    ]),
+                    h('i', {}, text({
+                        EN: 'March 2022 - September 2023',
+                        FR: 'Mars 2022 - Septembre 2023',
                     }[l])),
                     LineJump(),
                     h('span', {}, [
