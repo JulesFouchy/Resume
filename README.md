@@ -1,4 +1,4 @@
-Pour convertir en PDF :
+Pour convertir en PDF (nb : les 4 premières étapes ne sont peut-être pas nécessaires, il faudra tester la prochaine fois) :
 - Merge (temporairement) la branche print2pdf dans master
 - Aller dans *state.ts* pour choisir le langage
 - Build et commit
