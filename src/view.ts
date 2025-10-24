@@ -55,14 +55,14 @@ export default (state: State) => {
                 }[l],
                 [
                     text({
-                        EN: 'I am in love with programming; I enjoy all the creative freedom it offers us. I am particularly interested in 2D and 3D image generation, fulfilling my artistic interests.',
-                        FR: 'Passionné de programmation, j\'adore les possibilités de création infinies que cela nous offre. Je m\'intéresse particulièrement à la génération d\'images en 2D et 3D, conciliant ainsi mon côté artistique.',
+                        EN: 'I am in love with programming; I enjoy all the creative freedom it offers us. I am particularly interested in computer graphics, fulfilling my artistic interests.',
+                        FR: 'Passionné de programmation, j\'adore les possibilités de création infinies que cela nous offre. Je m\'intéresse particulièrement à la synthèse d\'image, conciliant ainsi mon côté artistique.',
                     }[l]),
-                    h('br', {}),
-                    text({
-                        EN: 'I also appreciate web technologies for their versatility and the possibility to share content with the world.',
-                        FR: 'J\'apprécie également les technologies web pour leur versatilité et les possibilités de partage de contenu qu\'elles nous offrent.',
-                    }[l]),
+                    LineJump(),
+                    h('a', {href: "https://julesfouchy.github.io/"}, text({
+                        EN: "More details on my website",
+                        FR: "Plus de détails sur mon site",
+                    }[l])),
                 ]
                 ),
                 Section({
@@ -70,12 +70,12 @@ export default (state: State) => {
                     FR: 'Compétences',
                 }[l],
                     h('span', {id: 'skills'}, [
-                        Skill('C++', 4),
+                        Skill('C++', 5),
                         Skill('Maths', 4),
                         Skill({
                             EN: 'Software Architecture',
                             FR: 'Architecture Logicielle',
-                        }[l], 4),
+                        }[l], 5),
                         Skill('Processing / p5.js', 5),
                         Skill('OpenGL', 4),
                         Skill('Unity', 3),
@@ -191,20 +191,23 @@ export default (state: State) => {
                 [
                     h('span', {}, [
                         h('b', {}, text({
-                            EN: 'Teaching Programming, Math and Computer Graphics at ICAN',
-                            FR: 'Cours de Programmation, Mathématiques et Synthèse d\'Image à l\'ICAN',
+                            EN: 'UI Programmer at Smode',
+                            FR: 'Programmeur UI chez Smode',
                         }[l])),
-                        WebsiteLink('https://www.ican-design.fr/'),
+                        WebsiteLink({
+                            EN: 'https://www.smode.io/en/',
+                            FR: 'https://www.smode.io/fr/',
+                        }[l]),
                     ]),
                     h('i', {}, text({
-                        EN: 'March 2024 - Today',
-                        FR: 'Mars 2024 - Aujourd\'hui',
+                        EN: 'November 2024 - Today',
+                        FR: "Novembre 2024 - Aujourd'hui",
                     }[l])),
                     LineJump(),
                     h('span', {}, [
                         h('b', {}, text({
                             EN: 'Teaching C++ and Software Architecture at IMAC',
-                            FR: 'Cours de C++ et Architecture Logiciel à l\'IMAC',
+                            FR: 'Cours de C++ et Architecture Logicielle à l\'IMAC',
                         }[l])),
                         WebsiteLink('https://julesfouchy.github.io/Learn--Clean-Code-With-Cpp/'),
                         WebsiteLink('https://www.ingenieur-imac.fr/'),
@@ -212,6 +215,18 @@ export default (state: State) => {
                     h('i', {}, text({
                         EN: 'September 2021 - Today',
                         FR: 'Septembre 2021 - Aujourd\'hui',
+                    }[l])),
+                    LineJump(),
+                    h('span', {}, [
+                        h('b', {}, text({
+                            EN: 'Teaching Programming, Math and Computer Graphics at ICAN',
+                            FR: 'Cours de Programmation, Mathématiques et Synthèse d\'Image à l\'ICAN',
+                        }[l])),
+                        WebsiteLink('https://www.ican-design.fr/'),
+                    ]),
+                    h('i', {}, text({
+                        EN: 'March 2024 - August 2025',
+                        FR: 'Mars 2024 - Août 2025',
                     }[l])),
                     LineJump(),
                     h('span', {}, [
@@ -293,8 +308,8 @@ export default (state: State) => {
                         FR: 'Cours particuliers de mathématiques',
                     }[l])),
                     h('i', {}, text({
-                        EN: 'September 2017 - Today',
-                        FR: 'Septembre 2017 - Aujourd\'hui',
+                        EN: 'September 2017 - 2019',
+                        FR: 'Septembre 2017 - 2019',
                     }[l])),
                 ]
                 ),
